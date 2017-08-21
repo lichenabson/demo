@@ -1,4 +1,4 @@
-# demo
+# a background management system demo by vue
 
 > a vue demo project
 
