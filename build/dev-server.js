@@ -82,6 +82,17 @@ devMiddleware.waitUntilValid(() => {
   _resolve()
 })
 
+app.get('/getData', function (req,res) {
+  res.send([
+    {name: '1', sex: '男'},
+    {name: '2', sex: '女'},
+    {name: '3', sex: '男'},
+    {name: '4', sex: '男女'},
+    {name: '5', sex: '有男有女'},
+    {name: '6', sex: '不是男不是女'}
+  ])
+})
+
 var server = app.listen(port)
 
 module.exports = {
