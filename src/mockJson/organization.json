@@ -1,0 +1,29 @@
+[{
+  "parentOrganizationId":0,
+  "organizationId":1,
+  "organizationName":"南京迅云幼儿园",
+  "address":"南京市雨花区雨花经济开发区三鸿路6路国家数字出版基地9楼",
+  "contact":"迅云管理员",
+  "telephone":"18115185660"
+},{
+  "parentOrganizationId":1,
+  "organizationId":2,
+  "organizationName":"南京晓庄实验幼儿园",
+  "address":"南京市雨花区雨花经济开发区三鸿路6路国家数字出版基地9楼",
+  "contact":"晓庄实验管理员",
+  "telephone":"18115185660"
+},{
+  "parentOrganizationId":1,
+  "organizationId":3,
+  "organizationName":"南京军区幼儿园",
+  "address":"南京市雨花区雨花经济开发区三鸿路6路国家数字出版基地9楼",
+  "contact":"军区管理员",
+  "telephone":"18115185660"
+},{
+  "parentOrganizationId":0,
+  "organizationId":4,
+  "organizationName":"南京教育局",
+  "address":"南京市雨花区雨花经济开发区三鸿路6路国家数字出版基地9楼",
+  "contact":"南京教育局管理员",
+  "telephone":"18115185660"
+}]
