@@ -1,10 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Your app title -->
+  <title>My App</title>
+  <!-- Path to Framework7 Library CSS, iOS Theme -->
+  <link rel="stylesheet" href="../plugin/font-awesome-4.7/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../plugin/framework7/css/framework7.ios.min.css">
+  <!-- Path to Framework7 color related styles, iOS Theme -->
+  <link rel="stylesheet" href="../plugin/framework7/css/framework7.ios.colors.min.css">
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="../plugin/framework7/css/my-app.css">
 </head>
 <body>
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Views -->
+<div class="views">
+  <!-- Your main view, should have "view-main" class -->
+  <div class="view view-main">
+    <!-- Top Navbar-->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+        <div class="center sliding">考勤数据查看</div>
+      </div>
+    </div>
+    <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+    <div class="pages navbar-through toolbar-through">
+      <!-- Page, "data-page" contains page name -->
+      <div data-page="index" class="page">
+        <!-- Scrollable page content -->
+        <div class="page-content">
+          <p>这里将暂时暂时一些内容</p>
+          <!-- Link to another page -->
+          <a href="../plugin/framework7/about.html">查看详情</a>
+          <div class="list-block">
+            <ul>
+              <li><a href="../plugin/framework7/form.html" class="item-link">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">查看一</div>
+                  </div>
+                </div></a></li>
+              <li><a href="../plugin/framework7/index.html" class="item-link">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">查看二</div>
+                  </div>
+                </div></a></li>
+              <li><a href="../plugin/framework7/services.html" class="item-link">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">查看三</div>
+                  </div>
+                </div></a></li>
+            </ul>
+          </div>
+        </div>
 
+      </div>
+    </div>
+    <!-- Bottom Toolbar-->
+    <div class="toolbar tabbar">
+      <div class="toolbar-inner">
+        <a href="../plugin/framework7/about.html" class="item-link lc-link active">
+          <i class="fa fa-align-justify"></i>
+        </a>
+        <a href="../plugin/framework7/index.html" class="item-link lc-link">
+          <i class="fa fa-align-left"></i>
+        </a>
+        <a href="../plugin/framework7/form.html" class="item-link lc-link">
+          <i class="fa fa-align-center"></i>
+        </a>
+        <a href="../plugin/framework7/services.html" class="item-link lc-link">
+          <i class="fa fa-align-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="../plugin/framework7/js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="../plugin/framework7/js/my-app.js"></script>
 </body>
 </html>
