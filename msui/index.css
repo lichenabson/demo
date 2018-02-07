@@ -1,0 +1,215 @@
+.attendance-header{
+  background-color: #5077aa;
+  /* height: 10rem; */
+}
+
+*{
+  font-family: "微软雅黑", serif;
+}
+
+
+ul,li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.attendance-header ul{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  color: #ffffff;
+  height: 3.8rem;
+}
+
+.attendance-header ul li span{
+  display: block;
+  text-align: center;
+}
+
+.attendance-header ul li:nth-child(3){
+  max-width: 50vw;
+}
+
+.attendance-header ul li>span:nth-child(odd){
+  font-size: 0.6rem;
+}
+
+.attendance-header ul li>span:nth-child(even){
+  font-size: 1rem;
+}
+
+
+.attendance-percent-number>i{
+  font-style: normal;
+  display: inline-block;
+  width: 1.1em;
+}
+
+.attendance-header .attendance-percent-line{
+  width: .1rem;
+  background: url("kaoqing_03.jpg") no-repeat 50% 50%;
+  background-size: contain;
+  height: 26%;
+}
+
+.attendance-btn{
+  background-color: #ffffff;
+  padding: .2rem .5rem;
+}
+
+.attendance-btn .label-switch .checkbox{
+  width: 3.7rem;
+  height: 1.3rem;
+}
+
+.attendance-btn .label-switch .checkbox:before{
+  width: 3.5rem;
+  height: 1.1rem;
+}
+
+.attendance-btn .label-switch input[type=checkbox]:checked+.checkbox:after{
+  -webkit-transform: translateX(2.4rem);
+  transform: translateX(2.4rem);
+}
+
+.attendance-btn .label-switch .checkbox:before{
+  background-color: red;
+}
+
+.attendance-btn .attendance-btn-on{
+  position: absolute;
+  left: 0.6rem;
+  top: 0.15rem;
+  color: #fff;
+  display: none;
+  font-size: 0.7rem;
+}
+
+.attendance-btn .attendance-btn-off{
+  position: absolute;
+  right: 0.6rem;
+  top: 0.15rem;
+  color: #fff;
+  display: block;
+  z-index: 2;
+  font-size: 0.7rem;
+}
+
+
+.attendance-btn .label-switch .checkbox:after{
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.attendance-btn .label-switch input[type=checkbox]:checked+.checkbox .attendance-btn-on{
+  display: block;
+}
+
+.attendance-btn .label-switch input[type=checkbox]:checked+.checkbox .attendance-btn-off{
+  display: none;
+}
+
+
+.attendance-btn .col-75{
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+.attendance-btn .col-25{
+  margin-top: 0.2rem;
+}
+
+.attendance-list .list-block{
+  margin-top: 0.95rem;
+}
+
+.attendance-list .list-title{
+  font-size: .7rem;
+  margin-bottom: -1px;
+}
+
+.attendance-list .list-title .item-title,.attendance-list .list-title .item-after{
+  color: #9E9E9E;
+}
+
+.attendance-list .list-content .item-after{
+  font-size: .7rem;
+  color: #9E9E9E;
+}
+
+.attendance-list .list-content em{
+  margin-left: .4rem;
+}
+
+
+.attendance-list .attendance-student-list{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+
+.attendance-list .attendance-student-list li{
+  width: 25vw;
+  text-align: center;
+  color: #e96c2e;
+  font-size: 0.8rem;
+  line-height: 1.7rem;
+}
+
+
+.attendance-className-banner{
+  font-size: 1rem;
+  line-height: 2.2rem;
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+
+.attendance-student-list {
+  margin-top: .1rem;
+}
+
+.attendance-student-list ul{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.attendance-student-list ul li{
+  width: 25%;
+  margin-bottom: 0.6rem;
+}
+
+.attendance-student-list ul li>span{
+  width: 70%;
+  display: block;
+  font-size: .6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.attendance-student-list ul li>span>img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+
+/*.attendance-student-list ul li>span:nth-child(1) img{
+
+}
+
+.attendance-student-list ul li>span:nth-child(2){
+
+}*/
