@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "微软雅黑", serif;
+}
+
+.detail-student-header{
+  background-color: #5077aa;
+}
+
+ul,li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.detail-student-header>ul{
+  height: 4.2rem;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  color: #ffffff;
+}
+
+
+.detail-student-header .student-info span{
+  display: block;
+  text-align: center;
+}
+
+.detail-student-header .student-line{
+  width: 2.2rem;
+  background: url("kaoqing_03.jpg") no-repeat 50% 50%;
+  background-size: contain;
+  height: 26%;
+}
+
+
+.detail-student-header .student-img img{
+  width: 3.6rem;
+  display: block;
+  border-radius: 50%;
+}
+
+
+.student-info>span:first-child{
+  font-size: 1rem;
+}
+
+.student-info>span:last-child{
+  font-size: 0.6rem;
+}
+
+.detail-banner{
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 2.2rem;
+  background-color: #ffffff;
+}
+
+.detail-content>div{
+  display: inline-block;
+  vertical-align: top;
+  padding: 2%;
+}
+
+.detail-content{
+  margin-top: 0.9rem;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 5px rgba(136, 136, 136, 0.2);
+}
+
+.detail-content>div.detail-content-img{
+  width: 46%;
+  /* padding-right: 1%; */
+  padding: 3% 1% 2% 4%;
+}
+
+.detail-content>div.detail-content-img>img{
+  width: 100%;
+}
+
+.detail-content>div.detail-content-info{
+  width: 50%;
+  padding-left: 1%;
+}
+
+.detail-content>div.detail-content-info li{
+  padding-left: 0.4rem;
+  line-height: 2.1rem;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.31);
+}
+
+.detail-content>div.detail-content-info li:last-child{
+  border: none;
+}
+
+.detail-content>div.detail-content-info li>span:nth-child(1){
+  font-size: 0.7rem;
+}
+
+.detail-content>div.detail-content-info li>span:nth-child(2){
+  font-size: 0.6rem;
+  color: #9E9E9E;
+  float: right;
+  text-align: right;
+}
+
+.detail-content-remark{
+  background-color: #ffffff;
+  margin-top: 1.6rem;
+  font-size: .7rem;
+  min-height: 10.6rem;
+  text-indent: 0.9rem;
+  line-height: 2.2rem;
+}
+
+

@@ -1,0 +1,341 @@
+body{
+  background: #efeff4;
+}
+
+.attendance-header{
+  background-color: #5077aa;
+  /* height: 10rem; */
+}
+
+*{
+  font-family: "微软雅黑", serif;
+}
+
+
+ul,li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.attendance-header ul{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  color: #ffffff;
+  height: 3.8rem;
+}
+
+.attendance-header ul li span{
+  display: block;
+  text-align: center;
+}
+
+.attendance-header ul li:nth-child(3){
+  max-width: 50vw;
+}
+
+.attendance-header ul li>span:nth-child(odd){
+  font-size: 0.6rem;
+}
+
+.attendance-header ul li>span:nth-child(even){
+  font-size: 1rem;
+}
+
+
+.attendance-percent-number>i{
+  font-style: normal;
+  display: inline-block;
+  width: 1.1em;
+}
+
+.attendance-header .attendance-percent-line{
+  width: .1rem;
+  background: url("../image/kaoqing_03.jpg") no-repeat 50% 50%;
+  background-size: contain;
+  height: 26%;
+}
+
+#attendance-btn{
+  background-color: #ffffff;
+  padding: .2rem .5rem;
+}
+
+#attendance-btn .weui-switch,#attendance-btn .weui-switch-cp__box{
+  width: 3.7rem;
+  height: 1.3rem;
+}
+
+#attendance-btn .weui-switch-cp__box:before,#attendance-btn .weui-switch:before{
+  width: 3.5rem;
+  height: 1.1rem;
+}
+
+#attendance-btn .weui-switch-cp__input:checked~.weui-switch-cp__box:after,#attendance-btn .weui-switch:checked:after{
+  -webkit-transform: translateX(2.4rem);
+  transform: translateX(2.4rem);
+}
+
+#attendance-btn .weui-switch-cp__box:before,#attendance-btn .weui-switch:before{
+  background-color: red;
+}
+
+#attendance-btn .attendance-btn-on{
+  position: absolute;
+  left: 0.6rem;
+  top: 0.05rem;
+  color: #fff;
+  display: none;
+  font-size: 0.7rem;
+}
+
+#attendance-btn .attendance-btn-off{
+  position: absolute;
+  right: 0.6rem;
+  top: 0.05rem;
+  color: #fff;
+  display: block;
+  z-index: 2;
+  font-size: 0.7rem;
+}
+
+#attendance-btn .weui-switch-cp__box:after,#attendance-btn .weui-switch:after{
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+#attendance-btn .weui-switch-cp__input:checked~.weui-switch-cp__box .attendance-btn-on{
+  display: block;
+}
+
+#attendance-btn .weui-switch-cp__input:checked~.weui-switch-cp__box .attendance-btn-off{
+  display: none;
+}
+
+
+#attendance-btn .col-75{
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+#attendance-btn .col-25{
+  margin-top: 0.2rem;
+}
+
+.attendance-list .list-title{
+  font-size: .7rem;
+  margin-bottom: -1px;
+}
+
+.attendance-list .cells-title .weui-cell__bd{
+  font-size: .7rem;
+  color: #9E9E9E;
+}
+
+.attendance-list .cells-list{
+  margin-top: -1px;
+}
+
+.attendance-list .weui-cell__ft{
+  font-size: .7rem;
+  color: #9E9E9E;
+}
+
+
+
+.attendance-list .attendance-student-list{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+
+.attendance-list .attendance-student-list li{
+  width: 25vw;
+  text-align: center;
+  color: #e96c2e;
+  font-size: 0.8rem;
+  line-height: 1.7rem;
+}
+
+.attendance-list .attendance-student-list li a{
+  color: #e96c2e;
+}
+
+.attendance-className-banner{
+  font-size: 1rem;
+  line-height: 2.2rem;
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+
+.attendance-student-list {
+  margin-top: .1rem;
+}
+
+.attendance-student-list ul{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.attendance-student-list ul li{
+  width: 25%;
+  margin-bottom: 0.6rem;
+}
+
+.attendance-student-list ul li>a>span{
+  width: 70%;
+  display: block;
+  font-size: .6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.attendance-student-list ul li>a>span>img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+
+/*.attendance-student-list ul li>span:nth-child(1) img{
+
+}
+
+.attendance-student-list ul li>span:nth-child(2){
+
+}*/
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "微软雅黑", serif;
+}
+
+.detail-student-header{
+  background-color: #5077aa;
+}
+
+ul,li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.detail-student-header>ul{
+  height: 4.2rem;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  color: #ffffff;
+}
+
+
+.detail-student-header .student-info span{
+  display: block;
+  text-align: center;
+}
+
+.detail-student-header .student-line{
+  width: 2.2rem;
+  background: url("../image/kaoqing_03.jpg") no-repeat 50% 50%;
+  background-size: contain;
+  height: 26%;
+}
+
+
+.detail-student-header .student-img img{
+  width: 3.6rem;
+  display: block;
+  border-radius: 50%;
+}
+
+
+.student-info>span:first-child{
+  font-size: 1rem;
+}
+
+.student-info>span:last-child{
+  font-size: 0.6rem;
+}
+
+.detail-banner{
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 2.2rem;
+  background-color: #ffffff;
+}
+
+.detail-content>div{
+  display: inline-block;
+  vertical-align: top;
+  padding: 2%;
+}
+
+.detail-content{
+  margin-top: 0.9rem;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 5px rgba(136, 136, 136, 0.2);
+}
+
+.detail-content>div.detail-content-img{
+  width: 40%;
+  /* padding-right: 1%; */
+  padding: 3% 1% 2% 4%;
+}
+
+.detail-content>div.detail-content-img>img{
+  width: 100%;
+}
+
+.detail-content>div.detail-content-info{
+  width: 50%;
+  padding-left: 1%;
+}
+
+.detail-content>div.detail-content-info li{
+  padding-left: 0.4rem;
+  line-height: 2.1rem;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.31);
+}
+
+.detail-content>div.detail-content-info li:last-child{
+  border: none;
+}
+
+.detail-content>div.detail-content-info li>span:nth-child(1){
+  font-size: 0.7rem;
+}
+
+.detail-content>div.detail-content-info li>span:nth-child(2){
+  font-size: 0.6rem;
+  color: #9E9E9E;
+  float: right;
+  text-align: right;
+}
+
+.detail-content-remark{
+  background-color: #ffffff;
+  margin-top: 1.6rem;
+  font-size: .7rem;
+  min-height: 10.6rem;
+  text-indent: 0.9rem;
+  line-height: 2.2rem;
+}
+
+
